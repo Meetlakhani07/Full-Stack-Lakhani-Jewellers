@@ -18,6 +18,12 @@ app.use('/api/products', require('./routes/productRoutes'));
 app.use('/api/orders', require('./routes/orderRoutes'));
 app.use('/api/shop', require('./routes/shopInfoRoutes'));
 app.use('/api/wishlist', require('./routes/wishlistRoutes'));
+app.get('/', (req, res)=>{
+    res.send({
+        activeStatus:true,
+        error:false,
+    })
+})
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
