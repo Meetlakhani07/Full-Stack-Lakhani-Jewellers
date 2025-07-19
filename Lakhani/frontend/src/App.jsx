@@ -17,13 +17,13 @@ import MyOrders from "./pages/MyOrders";
 import AboutUsPage from "./pages/AboutUsPage";
 
 // Admin pages
-import AdminDashboard from "./pages/Admin/AdminDashboard";
+import AdminDashboard from "./pages/Admin/AdminDashboard.jsx";
 import AdminOrders from "./pages/admin/AdminOrders.jsx";
-import AdminOrderDetail from "./pages/Admin/AdminOrderDetail";
-import AdminProducts from "./pages/admin/AdminProducts";
-import AdminProductEdit from "./pages/Admin/AdminProductEdit";
-import AdminCategories from "./pages/admin/AdminCategories";
-import AdminShopInfo from "./pages/Admin/AdminShopInfo";
+import AdminOrderDetail from "./pages/Admin/AdminOrderDetail.jsx";
+import AdminProducts from "./pages/admin/AdminProducts.jsx";
+import AdminProductEdit from "./pages/Admin/AdminProductEdit.jsx";
+import AdminCategories from "./pages/admin/AdminCategories.jsx";
+import AdminShopInfo from "./pages/Admin/AdminShopInfo.jsx";
 
 // Route protection
 import AdminRoute from "./context/AdminRoutes";
