@@ -18,12 +18,7 @@ app.use('/api/products', require('./routes/productRoutes'));
 app.use('/api/orders', require('./routes/orderRoutes'));
 app.use('/api/shop', require('./routes/shopInfoRoutes'));
 app.use('/api/wishlist', require('./routes/wishlistRoutes'));
-app.get('/', (req, res)=>{
-    res.send({
-        activeStatus:true,
-        error:false,
-    })
-})
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
@@ -31,7 +26,10 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
+const path = require('path');
+// Set the port
 
 const PORT = process.env.PORT || 5000;
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
