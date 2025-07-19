@@ -18,7 +18,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 
 // Admin pages
 import AdminDashboard from "./pages/Admin/AdminDashboard";
-import AdminOrders from "./pages/admin/AdminOrders";
+import AdminOrders from "./pages/admin/AdminOrders.jsx";
 import AdminOrderDetail from "./pages/Admin/AdminOrderDetail";
 import AdminProducts from "./pages/admin/AdminProducts";
 import AdminProductEdit from "./pages/Admin/AdminProductEdit";
