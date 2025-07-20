@@ -179,7 +179,7 @@ const OrderPage = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
@@ -606,7 +606,7 @@ const OrderPage = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

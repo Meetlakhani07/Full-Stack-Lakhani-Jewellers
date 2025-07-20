@@ -191,7 +191,7 @@ const OrderConfirmationPage = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="py-16 print:py-0 print:my-0">
         <div className="container mx-auto px-4 print:px-0">
           <div className="order-receipt max-w-4xl mx-auto">
@@ -770,7 +770,7 @@ const OrderConfirmationPage = () => {
           />
         </div>
       </section>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

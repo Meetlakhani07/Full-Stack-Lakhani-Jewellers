@@ -65,7 +65,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto">
@@ -137,7 +137,7 @@ const LoginPage = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };
