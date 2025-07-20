@@ -2,7 +2,6 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const path = require('path');
 const connectDB = require('./config/db');
 
 // Load environment variables
@@ -18,20 +17,17 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// API Routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
 app.use('/api/orders', require('./routes/orderRoutes'));
 app.use('/api/shop', require('./routes/shopInfoRoutes'));
 app.use('/api/wishlist', require('./routes/wishlistRoutes'));
 
-// Serve static files if in production
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'client', 'build')));
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-    });
-}
+// Simple health check route
+app.get('/', (req, res) => {
+  res.send('✅ Backend is running on Render!');
+});
 
-// Export the app (IMPORTANT for Vercel)
+// Export the app
 module.exports = app;
