@@ -279,7 +279,7 @@ const Header = () => {
             <div className="flex-1 md:flex-none flex justify-center">
               <Link to="/">
                 <img
-                  src="C:\Users\meetl\OneDrive\Desktop\FullStack\Full-Stack-Lakhani-Jewellers\Lakhani\frontend\images\logo\LJ_logo (2).png"
+                  src="\images\logo\LJ_logo (2).png"
                   alt="Lakhani Jewellers"
                   className="max-h-14 md:max-h-16"
                 />
