@@ -11,13 +11,13 @@ const BannerSection = () => {
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-80"></div>
 
-              <Link to="/products?category=rings" className="block">
-                <img
-                  className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="/images/banner/bg-1.jpg"
-                  alt="Small design Rings"
-                />
-              </Link>
+<Link to="/products?category=rings" className="block">
+    <img
+      className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
+      src="/images/banner/bg-1.jpg"
+      alt="Small design Rings"
+    />
+</Link>
 
               <div className="absolute left-0 bottom-0 p-6 transition-all duration-500 z-20 w-full transform group-hover:translate-y-0 translate-y-0">
                 <p className="text-amber-600 text-sm uppercase tracking-wider mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform -translate-y-4 group-hover:translate-y-0">
