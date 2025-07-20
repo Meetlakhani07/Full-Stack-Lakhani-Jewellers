@@ -242,13 +242,13 @@ const ProductsPage = () => {
   if (loading && currentPage === 1) {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
         <div className="py-20 text-center">
           <div className="animate-pulse">
             <p className="text-white">Loading products...</p>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   }
@@ -257,7 +257,7 @@ const ProductsPage = () => {
   if (error && !products.length) {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
         <div className="py-20 text-center text-red-500">
           <p>{error}</p>
           <button
@@ -274,7 +274,7 @@ const ProductsPage = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold text-white mb-8">Products</h1>
@@ -551,7 +551,7 @@ const ProductsPage = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

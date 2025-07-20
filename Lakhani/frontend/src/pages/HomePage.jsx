@@ -57,14 +57,14 @@ const HomePage = () => {
 
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       {/* Hero Slider */}
       <HeroSlider />
       <BannerSection />
       <FeaturedProducts products={featuredProducts} />
       <BestsellingProducts products={bestsellingProducts} />
       <SpecialCollection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };

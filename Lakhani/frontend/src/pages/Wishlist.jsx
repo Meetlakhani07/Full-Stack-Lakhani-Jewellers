@@ -41,7 +41,7 @@ const WishList = () => {
   if (!user) {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col items-center justify-center py-16 text-center">
             <AlertCircle size={48} className="text-amber-600 mb-4" />
@@ -68,14 +68,14 @@ const WishList = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   }
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-3xl font-bold text-white mb-6">My Wishlist</h1>
 
@@ -227,7 +227,7 @@ const WishList = () => {
           </div>
         )}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
