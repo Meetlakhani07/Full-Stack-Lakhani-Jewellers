@@ -1,7 +1,7 @@
 // Updated api.js with enhanced category and product services
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3700/api';
+const API_URL = 'https://lakhani-jewellers.onrender.com/api';
 
 // Create axios instance
 const api = axios.create({
