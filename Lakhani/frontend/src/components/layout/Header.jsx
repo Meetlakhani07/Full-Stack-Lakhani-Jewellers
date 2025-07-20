@@ -279,7 +279,7 @@ const Header = () => {
             <div className="flex-1 md:flex-none flex justify-center">
               <Link to="/">
                 <img
-                  src="/images/logo/LJ_Logo.png"
+                  src="C:\Users\meetl\OneDrive\Desktop\FullStack\Full-Stack-Lakhani-Jewellers\Lakhani\frontend\images\logo\LJ_logo (2).png"
                   alt="Lakhani Jewellers"
                   className="max-h-14 md:max-h-16"
                 />
@@ -461,7 +461,7 @@ const Header = () => {
               <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
                 <Link to="/">
                   <img
-                    src="/images/logo/LJ_Logo.png"
+                    src="C:\Users\meetl\OneDrive\Desktop\FullStack\Full-Stack-Lakhani-Jewellers\Lakhani\frontend\images\logo\LJ_logo (2).png"
                     alt="Lakhani Jewellers"
                     className="h-10"
                   />

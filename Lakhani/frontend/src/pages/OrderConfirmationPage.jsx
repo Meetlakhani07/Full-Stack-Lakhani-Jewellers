@@ -197,10 +197,10 @@ const OrderConfirmationPage = () => {
           <div className="order-receipt max-w-4xl mx-auto">
             {/* Header logo for print only */}
             <div className="hidden print:block text-center mb-8">
-              <h1 className="text-2xl font-bold mb-2">Lakhani Jewellers</h1>
-              <p className="text-base">Leicester, United Kingdom</p>
+              <h1 className="text-2xl font-bold mb-2">Lagecy Aura</h1>
+              <p className="text-base">Cheam, Sutton, London</p>
               <p className="text-sm">
-                Phone: +44 123 456 7890 | Email: contact@lakhaniJewellers.com
+                Phone: +44 743 635 7152 | Email: contact@lagecyaura.com
               </p>
               <div className="border-b-2 border-gray-300 my-4"></div>
             </div>
