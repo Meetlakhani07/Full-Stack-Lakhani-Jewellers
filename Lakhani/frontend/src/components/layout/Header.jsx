@@ -280,7 +280,7 @@ const Header = () => {
               <Link to="/">
                 <img
                   src="\images\logo\LJ_logo (2).png"
-                  alt="Lakhani Jewellers"
+                  alt="Legacy Aura"
                   className="max-h-14 md:max-h-16"
                 />
               </Link>

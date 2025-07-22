@@ -287,7 +287,7 @@ const Footer = () => {
             <p className="text-gray-400">
               Copyright &copy; {new Date().getFullYear()}{" "}
               <Link to="/" className="text-amber-600 hover:underline">
-                {shopInfo?.shopName || "Lakhani Jewellers"}
+                {shopInfo?.shopName || "Legacy Aura"}
               </Link>{" "}
               All rights Reserved.
             </p>
