@@ -14,7 +14,7 @@ const BannerSection = () => {
 <Link to="/products?category=rings" className="block">
     <img
   className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
-  src="/public/images/banner/bg-1.jpg"
+  src="/images/banner/bg-1.jpg"
   alt="Small design Rings"
 />
 
@@ -49,7 +49,7 @@ const BannerSection = () => {
               >
                 <img
                   className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="/public/images/banner/bg-2.jpg"
+                  src="/images/banner/bg-2.jpg"
                   alt="White gold rings"
                 />
               </Link>
