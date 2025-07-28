@@ -2,15 +2,19 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import React, { useState, useEffect } from "react";
+
 const HeroSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
   const [slides] = useState([
     {
       image: "/images/slider/1.png",
       title: "Necklace",
       subtitle: "22 Carat gold necklace for wedding",
-      offer: "exclusive offer ",
+      offer: "exclusive offer",
       price: 895,
     },
     {
@@ -28,6 +32,49 @@ const HeroSlider = () => {
       price: 189,
     },
   ]);
+
+  // Check screen size when resized
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const imageStyle = {
+    width: isMobile ? "100%" : "50%",
+    height: "auto",
+    objectFit: "cover",
+    borderRadius: "8px",
+  };
+
+  const slideStyle = {
+    display: "flex",
+    flexDirection: isMobile ? "column" : "row",
+    alignItems: "center",
+    marginBottom: "24px",
+    textAlign: isMobile ? "center" : "left",
+    padding: "16px",
+  };
+
+  return (
+    <div style={{ width: "100%", maxWidth: "1200px", margin: "auto" }}>
+      {slides.map((slide, index) => (
+        <div key={index} style={slideStyle}>
+          <img src={slide.image} alt={slide.title} style={imageStyle} />
+          <div style={{ padding: "16px", width: isMobile ? "100%" : "50%" }}>
+            <h2>{slide.title}</h2>
+            <p>{slide.subtitle}</p>
+            <strong>{slide.offer}</strong>
+            <p>£{slide.price}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,7 +111,7 @@ const HeroSlider = () => {
         setAnimating(false);
       }, 700);
     }
-  };
+
 
   return (
     <div className="relative h-[600px] overflow-hidden">
@@ -306,6 +353,5 @@ const HeroSlider = () => {
       `}</style>
     </div>
   );
-};
-
+  };
 export default HeroSlider;
